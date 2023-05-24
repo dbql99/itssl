@@ -30,9 +30,9 @@ function clickBtn() {
   }
   let result;
   if (flag == true) {
-    result='/result/요구만족.html';
+    result='/templates/result/요구만족';
   } else {
-    result = '/result/모니터링대응.html';
+    result = '/templates/result/모니터링대응';
   }
   // 결과를 다음 페이지로 전달
   window.location.href =  result;

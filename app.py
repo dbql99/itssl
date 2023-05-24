@@ -8,7 +8,7 @@ def home():
 
 @app.route("/solutionpic/solutionpic")
 def solution() :
-    return render_template("/solutionpic/solutionpic")
+    return render_template("/solutionpic/solutionpic.html")
 
 @app.route("/solutionmap/차량보안")
 def solution1() :
@@ -121,10 +121,57 @@ def checkrequire12() :
     return render_template("/checkrequire/하위조직.html")
 
 
-@app.route("/result/개발단계")
+@app.route("/templates/result/개발단계")
 def result() :
     return render_template("/result/개발단계.html")
 
+@app.route("/templates/result/모니터링대응")
+def result2() :
+    return render_template("/result/모니터링대응.html")
+
+@app.route("/templates/result/사이버공격")
+def result3() :
+    return render_template("/result/사이버공격.html")
+
+@app.route("/templates/result/사이버보안성공")
+def result4() :
+    return render_template("/result/사이버보안성공.html")
+
+@app.route("/templates/result/사이버보안위험")
+def result5() :
+    return render_template("/result/사이버보안위험.html")
+
+@app.route("/templates/result/생산단계")
+def result6() :
+    return render_template("/result/생산단계.html")
+
+@app.route("/templates/result/생산후단계")
+def result7() :
+    return render_template("/result/생산후단계.html")
+
+@app.route("/templates/result/완화조치")
+def result8() :
+    return render_template("/result/완화조치.html")
+
+@app.route("/templates/result/요구만족")
+def result9() :
+    return render_template("/result/요구만족.html")
+
+@app.route("/templates/result/위험관리확인")
+def result10() :
+    return render_template("/result/위험관리확인.html")
+
+@app.route("/templates/result/위험평가분석")
+def result11() :
+    return render_template("/result/위험평가분석.html")
+
+@app.route("/templates/result/위험평가최신")
+def result12() :
+    return render_template("/result/위험평가최신.html")
+
+@app.route("/templates/result/하위조직")
+def result13() :
+    return render_template("/result/하위조직.html")
 
 @app.route('/homepage')
 def homepage():
@@ -132,5 +179,5 @@ def homepage():
 
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', port=5000, debug=True)
+    app.run('0.0.0.0', port=80, debug=True)
     
